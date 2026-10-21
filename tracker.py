@@ -27,5 +27,9 @@ class GenshinTracker:
     def update_resin(self):
         last_update = datetime.strptime(self.data['last_resin_update'], %Y-%m-%d %H:5M:%S")
         now = datatime.now()
-        
-    
+
+        diff = now - last_update
+        minutes_elapsed = diff.total_seconds() // 60
+        resin_gained = int(minutes_elapsed // 8)
+
+       
