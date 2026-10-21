@@ -23,4 +23,9 @@ class GenshinTracker:
     def save_data(self):
         with open(self.filename, 'w') as f:
             json.dump(self.data, f, indent=4)
+
+    def update_resin(self):
+        last_update = datetime.strptime(self.data['last_resin_update'], %Y-%m-%d %H:5M:%S")
+        now = datatime.now()
         
+    
