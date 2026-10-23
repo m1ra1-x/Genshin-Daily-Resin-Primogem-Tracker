@@ -32,4 +32,27 @@ class GenshinTracker:
         minutes_elapsed = diff.total_seconds() // 60
         resin_gained = int(minutes_elapsed // 8)
 
+        if resin_gained > 0:
+            self.data['current_resin'] = min(160, self.data['current_resin'] + resin_gained)
+            remaining_minutes = minutes_elapsed % 8
+            new_time = now - timedelta (minutes=remaining_minutes)
+            self.data['last_resin_update'] = new_time.strftime("%Y-%m-%d %H:%M:%S")
+            self.save_data()
+            return resin_gained
+        return 0
+
+    def update_primogems(self, amount):
+        self.data['primogems'] += amount
+        self.save_data()
+
+    def get_status(self):
+        gained = self.update_resin()
+        resin = self.data['current_resin']
+        pems = self.data['primogems']
+        goal = self.data['goal_primogems']
+
+        progress = (pems / goal) * 100 if goal > 0 else 0
+
+
+
        
