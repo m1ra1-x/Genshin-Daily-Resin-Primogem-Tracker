@@ -53,6 +53,15 @@ class GenshinTracker:
 
         progress = (pems / goal) * 100 if goal > 0 else 0
 
+        status = (
+            f"Current Resin: {resin]/160 "
+            f"({'+' if gained > 0 else ''}{gained} regenerated since last check)\n"
+            f"Primogems: {pems} / {goal}\n"
+            f"Savings Progress: {progress:.2f}%\n"
+        )
+        return status 
 
+    def main():
+        tracker = GenshinTracker()
 
        
