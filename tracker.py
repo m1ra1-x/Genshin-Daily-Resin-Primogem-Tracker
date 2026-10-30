@@ -64,4 +64,12 @@ class GenshinTracker:
     def main():
         tracker = GenshinTracker()
 
-       
+        while True:
+            print("\n1. View Status\n2. Update Resin (Spend)\n3. Add/Subtract Primogems\n4. Set Goal\n5. Exit")
+            Choice = input("Select an Option: ")
+
+            if choice == '1':
+                print(tracker.get_status())
+            elif choice == '2':
+                try:
+                    
