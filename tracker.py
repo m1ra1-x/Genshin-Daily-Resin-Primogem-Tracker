@@ -72,4 +72,15 @@ class GenshinTracker:
                 print(tracker.get_status())
             elif choice == '2':
                 try:
+                    spent = int(input("How much resin did you spend? "))
+                    tracker.data['current_resin'] -= spent
+                    if tracker.data['current_resin'] < 0: tracker.data['current_resin'] = 0
+                    tracker.save_data()
+                    print("Resin Updated!")
+                except ValueError:
+                    print("Please enter a valid number")
+            elif choice == '3':
+                try:
+                    amount = int(input("Amount to add (use negative to subtract): "))
+                    tracker
                     
