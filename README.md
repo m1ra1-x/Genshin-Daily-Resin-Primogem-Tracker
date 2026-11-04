@@ -12,5 +12,5 @@ Basically, its a simple tool to keep track of your resources so you don't need t
 1. Download the files
 2. Open the terminal/command prompt
 3. Run:
-   ```python tracker.py```
+   ```tracker.py```
 4. Follow the menu to update Resin or Gems
