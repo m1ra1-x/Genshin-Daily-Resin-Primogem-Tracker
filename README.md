@@ -13,4 +13,4 @@ Basically, its a simple tool to keep track of your resources so you don't need t
 2. Open the terminal/command prompt
 3. Run:
    ```tracker.py```
-4. Follow the menu to update Resin or Gems
+4. Follow the menu to update resin or gems
