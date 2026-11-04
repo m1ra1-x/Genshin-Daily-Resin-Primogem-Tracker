@@ -78,9 +78,28 @@ class GenshinTracker:
                     tracker.save_data()
                     print("Resin Updated!")
                 except ValueError:
-                    print("Please enter a valid number")
+                    print("Enter a valid number") 
             elif choice == '3':
                 try:
                     amount = int(input("Amount to add (use negative to subtract): "))
-                    tracker
+                    tracker.update_primogems(amount)
+                    print("Primogems Updated")
+                except ValueError:
+                    print("Enter a valid number") 
+            elif choice == '4':
+                try:
+                    goal = int(input("Enter Primogem goal"))
+                    tracker.data['goal_primogems'] = goal
+                    tracker.save_data()
+                    print("Goal Updated")
+                except ValueError:
+                    print("Enter a valid number") 
+            elif choice == '5':
+                print("Goodbye!")
+                break
+            else:
+                print("Invalid Choice.")
+
+if _name_ == "_main_":
+    main()
                     
