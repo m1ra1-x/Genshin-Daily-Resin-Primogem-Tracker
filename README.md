@@ -1,6 +1,6 @@
 *NEERA_2* :heart:
 
-Daily tracking of Resin regeneration and Primogem use. Honestly just trying to help new players enjoy playing without a million guides 😺 just a quick script to help handle those annoying parts. 
+Daily tracking of resin regeneration and primogem use. Honestly just trying to help new players enjoy playing without a million guides 😺 just a quick script to help handle those annoying parts. 
 
 <img width="513" height="514" alt="gencat" src="https://github.com/user-attachments/assets/8e16f4c1-9147-46c2-b2af-30e1fbcaeb0e" />
 
