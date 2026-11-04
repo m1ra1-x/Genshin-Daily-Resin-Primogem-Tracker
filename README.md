@@ -8,3 +8,9 @@ Basically, its a simple tool to keep track of your resources so you don't need t
   * Resin Timer: Script checks last time you opened it and calculates how much you regenerated (approx 1 every 8 min)
   * Primogem Goal: If you are saving for a specific character, you can set a goal to see the % and how close you are
   * Savs the data to a ```.json```
+
+1. Download the files
+2. Open the terminal/command prompt
+3. Run:
+   ```python tracker.py```
+4. Follow the menu to update Resin or Gems
